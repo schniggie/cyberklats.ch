@@ -6,13 +6,13 @@ import Layout from '../layouts/BlogPost.astro';
 	title="About"
 	description="About cyberklats.ch"
 	pubDate={new Date('November 01 2023')}
-	heroImage="/blog-placeholder-about.jpg"
+	heroImage="/about.webp"
 >
 	<p>
 	I will use this place as a dump for random stuff I stumble across my daily journeys in #Neuland.
 	</p>
 
-	<h2>Disclaimer</h2>
+	<h3>Disclaimer</h3>
 	<p>
 	I use this blog also as playground for my non existent developer skills :)
 	So don't worry about broken stuff.
@@ -20,9 +20,34 @@ import Layout from '../layouts/BlogPost.astro';
 	<p>
 	Currently the page is built on:
 
-	![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
-	![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
-	![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-	![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
-	</p>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+        }
+        .grid-item {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+    <div class="grid-container">
+        <!-- Astro Logo -->
+        <div class="grid-item">
+            <img src="https://astro.build/assets/press/astro-icon-dark.svg" alt="Astro" style="width:100px;">
+            <p>Astro Web Framework</p>
+        </div>
+
+        <!-- JavaScript Logo -->
+        <div class="grid-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" style="width:100px;">
+            <p>JavaScript</p>
+        </div>
+
+        <!-- Markdown Logo -->
+        <div class="grid-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg" alt="Markdown" style="width:100px;">
+            <p>Markdown</p>
+        </div>
+    </div>
 </Layout>
